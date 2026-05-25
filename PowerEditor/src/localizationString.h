@@ -20,8 +20,7 @@ LocalizationSwitcher::LocalizationDefinition localizationDefs[] =
 	{L"English",                L"english.xml"},
 	{L"English (customizable)", L"english_customizable.xml"},
 	{L"Français",               L"french.xml"},
-	{L"台灣繁體",                L"taiwaneseMandarin.xml"},
-	{L"中文简体",                L"chineseSimplified.xml"},
+	{L"正體中文",                L"chinese.xml"},
 	{L"한국어",                  L"korean.xml"},
 	{L"日本語",                  L"japanese.xml"},
 	{L"Deutsch",                L"german.xml"},
@@ -109,6 +108,5 @@ LocalizationSwitcher::LocalizationDefinition localizationDefs[] =
 	{L"Vèneto",                 L"venetian.xml"},
 	{L"Gaeilge",                L"irish.xml"},
 	{L"नेपाली",                   L"nepali.xml"},
-	{L"香港繁體",                L"hongKongCantonese.xml"},
 	{L"Аԥсуа бызшәа",           L"abkhazian.xml"}
 };

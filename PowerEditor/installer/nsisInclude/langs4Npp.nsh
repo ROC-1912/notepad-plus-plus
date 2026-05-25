@@ -62,8 +62,8 @@ SectionGroup "Localization" localization
 	${MementoUnselectedSection} "Catalan" catalan
 		CopyFiles "$PLUGINSDIR\nppLocalization\catalan.xml" "$INSTDIR\localization\catalan.xml"
 	${MementoSectionEnd}
-	${MementoUnselectedSection} "Chinese (Simplified)" chineseSimplified
-		CopyFiles "$PLUGINSDIR\nppLocalization\chineseSimplified.xml" "$INSTDIR\localization\chineseSimplified.xml"
+	${MementoUnselectedSection} "Chinese" chinese
+		CopyFiles "$PLUGINSDIR\nppLocalization\chinese.xml" "$INSTDIR\localization\chinese.xml"
 	${MementoSectionEnd}
 	${MementoUnselectedSection} "Corsican" corsican
 		CopyFiles "$PLUGINSDIR\nppLocalization\corsican.xml" "$INSTDIR\localization\corsican.xml"
@@ -124,9 +124,6 @@ SectionGroup "Localization" localization
 	${MementoSectionEnd}
 	${MementoUnselectedSection} "Hindi" hindi
 		CopyFiles "$PLUGINSDIR\nppLocalization\hindi.xml" "$INSTDIR\localization\hindi.xml"
-	${MementoSectionEnd}
-	${MementoUnselectedSection} "Hong Kong Cantonese" hongKongCantonese
-		CopyFiles "$PLUGINSDIR\nppLocalization\hongKongCantonese.xml" "$INSTDIR\localization\hongKongCantonese.xml"
 	${MementoSectionEnd}
 	${MementoUnselectedSection} "Hungarian" hungarian
 		CopyFiles "$PLUGINSDIR\nppLocalization\hungarian.xml" "$INSTDIR\localization\hungarian.xml"
@@ -248,9 +245,6 @@ SectionGroup "Localization" localization
 	${MementoUnselectedSection} "Tagalog" tagalog
 		CopyFiles "$PLUGINSDIR\nppLocalization\tagalog.xml" "$INSTDIR\localization\tagalog.xml"
 	${MementoSectionEnd}
-	${MementoUnselectedSection} "Taiwanese Mandarin" chineseTraditional
-		CopyFiles "$PLUGINSDIR\nppLocalization\taiwaneseMandarin.xml" "$INSTDIR\localization\taiwaneseMandarin.xml"
-	${MementoSectionEnd}
 	${MementoUnselectedSection} "Tajik" tajik
 		CopyFiles "$PLUGINSDIR\nppLocalization\tajikCyrillic.xml" "$INSTDIR\localization\tajikCyrillic.xml"
 	${MementoSectionEnd}
@@ -345,12 +339,8 @@ SectionGroup un.localization
 	Section un.catalan
 		Delete "$INSTDIR\localization\catalan.xml"
 	SectionEnd
-	Section un.chineseTraditional
+	Section un.chinese
 		Delete "$INSTDIR\localization\chinese.xml"
-		Delete "$INSTDIR\localization\taiwaneseMandarin.xml"
-	SectionEnd
-	Section un.chineseSimplified
-		Delete "$INSTDIR\localization\chineseSimplified.xml"
 	SectionEnd
 	Section un.corsican
 		Delete "$INSTDIR\localization\corsican.xml"
@@ -576,8 +566,5 @@ SectionGroup un.localization
 	SectionEnd
 	Section un.nepali
 		Delete "$INSTDIR\localization\nepali.xml"
-	SectionEnd
-	Section un.hongKongCantonese
-		Delete "$INSTDIR\localization\hongKongCantonese.xml"
 	SectionEnd
 SectionGroupEnd

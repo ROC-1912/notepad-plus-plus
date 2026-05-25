@@ -217,15 +217,14 @@ page Custom ExtraOptions
 !define MUI_LANGDLL_ALLLANGUAGES
 ;Languages
 
+  !insertmacro MUI_LANGUAGE "Chinese"
   !insertmacro MUI_LANGUAGE "English"
   !insertmacro MUI_LANGUAGE "French"
-  !insertmacro MUI_LANGUAGE "TradChinese"
   !insertmacro MUI_LANGUAGE "Spanish"
   !insertmacro MUI_LANGUAGE "Hungarian"
   !insertmacro MUI_LANGUAGE "Russian"
   !insertmacro MUI_LANGUAGE "German"
   !insertmacro MUI_LANGUAGE "Dutch"
-  !insertmacro MUI_LANGUAGE "SimpChinese"
   !insertmacro MUI_LANGUAGE "Italian"
   !insertmacro MUI_LANGUAGE "Danish"
   !insertmacro MUI_LANGUAGE "Polish"
@@ -376,10 +375,9 @@ Function .onInstSuccess
 FunctionEnd
 
 
+LangString langFileName ${LANG_CHINESE} "chinese.xml"
 LangString langFileName ${LANG_ENGLISH} "english.xml"
 LangString langFileName ${LANG_FRENCH} "french.xml"
-LangString langFileName ${LANG_TRADCHINESE} "chinese.xml"
-LangString langFileName ${LANG_SIMPCHINESE} "chineseSimplified.xml"
 LangString langFileName ${LANG_KOREAN} "korean.xml"
 LangString langFileName ${LANG_JAPANESE} "japanese.xml"
 LangString langFileName ${LANG_GERMAN} "german.xml"
@@ -896,11 +894,8 @@ SectionGroup "Localization" localization
 	${MementoUnselectedSection} "Catalan" catalan
 		CopyFiles "$TEMP\nppLocalization\catalan.xml" "$INSTDIR\localization\catalan.xml"
 	${MementoSectionEnd}
-	${MementoUnselectedSection} "Chinese (Traditional)" chineseTraditional
+	${MementoUnselectedSection} "Chinese" chinese
 		CopyFiles "$TEMP\nppLocalization\chinese.xml" "$INSTDIR\localization\chinese.xml"
-	${MementoSectionEnd}
-	${MementoUnselectedSection} "Chinese (Simplified)" chineseSimplified
-		CopyFiles "$TEMP\nppLocalization\chineseSimplified.xml" "$INSTDIR\localization\chineseSimplified.xml"
 	${MementoSectionEnd}
 	${MementoUnselectedSection} "Croatian" croatian
 		CopyFiles "$TEMP\nppLocalization\croatian.xml" "$INSTDIR\localization\croatian.xml"
@@ -1605,11 +1600,8 @@ SectionGroup un.localization
 	Section un.catalan
 		Delete "$INSTDIR\localization\catalan.xml"
 	SectionEnd
-	Section un.chineseTraditional
+	Section un.chinese
 		Delete "$INSTDIR\localization\chinese.xml"
-	SectionEnd
-	Section un.chineseSimplified
-		Delete "$INSTDIR\localization\chineseSimplified.xml"
 	SectionEnd
 	Section un.croatian
 		Delete "$INSTDIR\localization\croatian.xml"

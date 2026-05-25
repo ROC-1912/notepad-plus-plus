@@ -49,8 +49,8 @@
 			<Component Id="catalan_LANG">
 				<File Source="..\..\installer\nativeLang\catalan.xml" />
 			</Component>
-			<Component Id="chineseSimplified_LANG">
-				<File Source="..\..\installer\nativeLang\chineseSimplified.xml" />
+			<Component Id="chinese_LANG">
+				<File Source="..\..\installer\nativeLang\chinese.xml" />
 			</Component>
 			<Component Id="corsican_LANG">
 				<File Source="..\..\installer\nativeLang\corsican.xml" />
@@ -114,9 +114,6 @@
 			</Component>
 			<Component Id="hindi_LANG">
 				<File Source="..\..\installer\nativeLang\hindi.xml" />
-			</Component>
-			<Component Id="hongKongCantonese_LANG">
-				<File Source="..\..\installer\nativeLang\hongKongCantonese.xml" />
 			</Component>
 			<Component Id="hungarian_LANG">
 				<File Source="..\..\installer\nativeLang\hungarian.xml" />
@@ -237,9 +234,6 @@
 			</Component>
 			<Component Id="tagalog_LANG">
 				<File Source="..\..\installer\nativeLang\tagalog.xml" />
-			</Component>
-			<Component Id="taiwaneseMandarin_LANG">
-				<File Source="..\..\installer\nativeLang\taiwaneseMandarin.xml" />
 			</Component>
 			<Component Id="tajikCyrillic_LANG">
 				<File Source="..\..\installer\nativeLang\tajikCyrillic.xml" />

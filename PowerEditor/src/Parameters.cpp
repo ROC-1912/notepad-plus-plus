@@ -5244,10 +5244,8 @@ std::wstring NppParameters::getLocPathFromStr(const std::wstring & localizationC
 		return L"bulgarian.xml";
 	if (localizationCode == L"ca")
 		return L"catalan.xml";
-	if (localizationCode == L"zh-tw" || localizationCode == L"zh-hk" || localizationCode == L"zh-sg")
-		return L"taiwaneseMandarin.xml";
-	if (localizationCode == L"zh" || localizationCode == L"zh-cn")
-		return L"chineseSimplified.xml";
+	if (localizationCode == L"zh" || localizationCode == L"zh-cn" || localizationCode == L"zh-tw" || localizationCode == L"zh-hk" || localizationCode == L"zh-sg" || localizationCode == L"yue")
+		return L"chinese.xml";
 	if (localizationCode == L"co" || localizationCode == L"co-fr")
 		return L"corsican.xml";
 	if (localizationCode == L"hr")
@@ -5396,8 +5394,6 @@ std::wstring NppParameters::getLocPathFromStr(const std::wstring & localizationC
 		return L"irish.xml";
 	if (localizationCode == L"sgs")
 		return L"samogitian.xml";
-	if (localizationCode == L"yue")
-		return L"hongKongCantonese.xml";
 	if (localizationCode == L"ab" || localizationCode == L"abk")
 		return L"abkhazian.xml";
 
