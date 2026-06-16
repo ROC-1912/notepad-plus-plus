@@ -514,6 +514,7 @@ struct LangMenuItem final
 
 struct PrintSettings final {
 	bool _printLineNumber = true;
+	bool _printFormFeedPageBreak = false;
 	int _printOption = SC_PRINT_COLOURONWHITE;
 
 	std::wstring _headerLeft;
@@ -870,6 +871,7 @@ struct NppGUI final
 	LargeFileRestriction _largeFileRestriction;
 
 	std::string _shortcutsXmlHmacInConfig;
+	std::string _shortcutsOnDiskHmac;
 };
 
 
